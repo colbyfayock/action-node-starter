@@ -1,0 +1,23 @@
+name: Action
+
+on:
+  # schedule:
+  #   - cron: "0 14 * * *"
+  workflow_dispatch:
+
+# env:
+#   MY_API_KEY: ${{ secrets.MY_API_KEY }}
+
+jobs:
+  action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+
+      - run: yarn install --frozen-lockfile
+
+      - run: node src/main.js
