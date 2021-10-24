@@ -5,7 +5,8 @@
 To start a new project, you can either use [degit](https://github.com/Rich-Harris/degit) by running:
 
 ```
-mkdir my-action && cd my-action
+mkdir my-action
+cd my-action
 degit https://github.com/colbyfayock/action-node-starter
 ```
 
