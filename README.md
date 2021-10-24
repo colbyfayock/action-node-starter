@@ -1,5 +1,7 @@
 # GitHub Action Node.js Starter
 
+A simple repository starter for creating a new local workflow with Github Actions.
+
 ## Getting Started
 
 To start a new project, you can either use [degit](https://github.com/Rich-Harris/degit) by running:
